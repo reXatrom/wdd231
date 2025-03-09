@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section img {
+        width: 500px;
+    }
+}
