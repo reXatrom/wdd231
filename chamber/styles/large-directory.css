@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #directory {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card {
+        padding: 10px;
+    }
+}

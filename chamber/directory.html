@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hounliho J. Samson's WDD 231 Chamber Directory Page">
+    <meta name="author" content="Hounliho J. Samson">
+    
+    <title>Rexatrom Chamber</title>
+
+    <meta property="og:title" content="Rexatrom Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/">
+    <meta property="og:url" content="https://">
+
+    <link rel="icon" type="icon" href="./images/Faviconrex.png">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/large-directory.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rexatrom Chamber of Commerce</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+        <div class="view-toggle">
+            <button id="gridview">Grid View</button>
+            <button id="listview">List View</button>
+        </div>
+
+        <section id="directory" class="grid"></section>
+    </main>
+
+    <footer>
+        <p>Contact us at info@rexatromchamber.com | Phone: (234) 808-014-5320</p>
+        <p>&copy; <span id="year"></span> Rexatrom Chamber of Commerce | WDD 231</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
