@@ -4,7 +4,7 @@
         "address": "5, St Timothy College, Onike, Lagos State, Nigeria",
         "phone": "(234) 908-043-5103",
         "website": "https://faidattech.ng",
-        "image": "",
+        "image": "../images/faidattech.jpg",
         "membership": 1
     },
 
@@ -13,7 +13,7 @@
         "address": "5, Yeye, Iwaya, Lagos State, Nigeria",
         "phone": "(234) 806-344-4767",
         "website": "https://lookandliveschools.ng",
-        "image": "",
+        "image": "../images/lookandlive.jpg",
         "membership": 2
     },
 
@@ -22,7 +22,7 @@
         "address": "18, Ogbe Close, Iwaya, Lagos State, Nigeria",
         "phone": "(234) 701-712-8993",
         "website": "https://amazinggrace.ng",
-        "image": "",
+        "image": "../images/amazinggrace.jpg",
         "membership": 3
     },
 
@@ -31,7 +31,7 @@
         "address": "20, Ogbe Close, Iwaya, Lagos State, Nigeria",
         "phone": "(234) 808-014-5320",
         "website": "https://hiart.ng",
-        "image": "",
+        "image": "../images/hiart.jpg",
         "membership": 3
     },
 
@@ -40,7 +40,7 @@
         "address": "22, Ogbe Close, Iwaya, Lagos State, Nigeria",
         "phone": "(234) 908-043-5103",
         "website": "https://opexinterior.ng",
-        "image": "",
+        "image": "../images/opex.jpg",
         "membership": 2
     },
 
@@ -49,7 +49,7 @@
         "address": "24, Ogbe Close, Iwaya, Lagos State, Nigeria",
         "phone": "(234) 902-182-3757",
         "website": "https://faidattech.ng",
-        "image": "",
+        "image": "../images/kellcy.jpg",
         "membership": 1
     }
 ]

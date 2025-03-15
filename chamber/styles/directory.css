@@ -14,6 +14,24 @@ header {
     padding: 15px;
 }
 
+header h1 {
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s steps(20, end) forwards, blink 0.7s infinite;
+    border-right: 3px solid white;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -27,6 +45,47 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    position: relative;
+    transition: rgb(40, 167, 240) 0.3s ease;
+    padding: 10px 15px;
+}
+
+nav a::before,
+nav a::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid whitesmoke;
+    border-right: 3px solid white;
+    transform: translate(-100%, 100%);
+}
+
+nav a::after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    transform: translate(100%, -50%);
+}
+
+nav a:hover:before,
+nav a:hover:after {
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+nav a:hover {
+    color: #16c8f5;
 }
 
 main {
@@ -47,13 +106,64 @@ button {
     background: #007bff;
     color: white;
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: 0.3s;
+    position: relative;
+    z-index: 0;
 }
 
-button:hover {
-    background: #0056b3;
+button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }
+
+button::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000, #ff7300, #fffb00, #48ff00,
+        #00ffd5, #002bff, #ff00c8, #ff0000
+    );
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 7px);
+    height: calc(100% + 7px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0;}
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:active {
+    color: #000;
+    font-weight: bold;
+}
+
 
 #directory {
     display: grid;
