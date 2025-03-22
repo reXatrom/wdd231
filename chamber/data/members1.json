@@ -1,0 +1,59 @@
+{
+    "members": [
+        [
+            {
+                "name": "Faidat Tech",
+                "address": "5, St Timothy College, Onike, Lagos State, Nigeria",
+                "phone": "(234) 908-043-5103",
+                "website": "https://faidattech.ng",
+                "image": "../images/faidattech.jpg",
+                "membership": 1
+            },
+        
+            {
+                "name": "Look and Live College",
+                "address": "5, Yeye, Iwaya, Lagos State, Nigeria",
+                "phone": "(234) 806-344-4767",
+                "website": "https://lookandliveschools.ng",
+                "image": "../images/lookandlive.jpg",
+                "membership": 2
+            },
+        
+            {
+                "name": "Amazing Grace Cleaning Service",
+                "address": "18, Ogbe Close, Iwaya, Lagos State, Nigeria",
+                "phone": "(234) 701-712-8993",
+                "website": "https://amazinggrace.ng",
+                "image": "../images/amazinggrace.jpg",
+                "membership": 3
+            },
+        
+            {
+                "name": "HI-ART",
+                "address": "20, Ogbe Close, Iwaya, Lagos State, Nigeria",
+                "phone": "(234) 808-014-5320",
+                "website": "https://hiart.ng",
+                "image": "../images/hiart.jpg",
+                "membership": 3
+            },
+        
+            {
+                "name": "Opex Interior",
+                "address": "22, Ogbe Close, Iwaya, Lagos State, Nigeria",
+                "phone": "(234) 908-043-5103",
+                "website": "https://opexinterior.ng",
+                "image": "../images/opex.jpg",
+                "membership": 2
+            },
+        
+            {
+                "name": "Kellcy Beat",
+                "address": "24, Ogbe Close, Iwaya, Lagos State, Nigeria",
+                "phone": "(234) 902-182-3757",
+                "website": "https://faidattech.ng",
+                "image": "../images/kellcy.jpg",
+                "membership": 1
+            }
+        ]
+    ]
+}

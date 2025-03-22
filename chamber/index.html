@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hounliho J. Samson's WDD 231 Chamber Home Page">
+    <meta name="author" content="Hounliho J. Samson">
+    
+    <title>Rexatrom Chamber</title>
+
+    <meta property="og:title" content="Rexatrom Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/">
+    <meta property="og:url" content="https://">
+
+    <link rel="icon" type="icon" href="./images/Faviconrex.png">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/large-directory.css">
+</head>
+<body>
+
+    <header>
+        <h1> Rexatrom Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hiart.jpg" alt="Cityscape representing business community">
+            <div class="hero-text">
+                <h2>Welcome to Our Chamber</h2>
+                <p>Connecting businesses and fostering economic growth.</p>
+                <a href="#" class="cta-button">Join Now</a>
+            </div>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <p>Stay updated with the lastest events in our community.</p>
+            <ul>
+                <li><strong>Business Networking Meetup</strong> - March 20</li>
+                <li><strong>Small Business Workshop</strong> - April 10</li>
+                <li><strong>Annual Chamber Gala</strong> - May 5</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Local weather</h2>
+            <p>Current Temperature: <span id="current-temp">--</span></p>
+            <p>Condition: <span id="weather-desc">--</span></p>
+            <div id="forecast" class="forcast"></div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member spotlights</h2>
+            <div id="spotlights"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at info@rexatromchamber.com | Phone: (234) 808-014-5320</p>
+        <p>&copy; <span id="year"></span> Rexatrom Chamber of Commerce | WDD 231</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
