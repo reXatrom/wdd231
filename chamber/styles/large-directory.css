@@ -16,4 +16,12 @@
     .member-card {
         padding: 10px;
     }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
 }

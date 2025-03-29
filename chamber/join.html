@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hounliho J. Samson's WDD 231 Chamber Home Page">
+    <meta name="author" content="Hounliho J. Samson">
+    
+    <title>Rexatrom Chamber</title>
+
+    <meta property="og:title" content="Rexatrom Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/">
+    <meta property="og:url" content="https://">
+
+    <link rel="icon" type="icon" href="./images/Faviconrex.png">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/large-directory.css">
+</head>
+
+<body>
+    <header>
+        <h1> Rexatrom Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="join-container">
+            <h2 class="join-h2">Become a Member</h2>
+            <p>Fill out the form below to apply for membership in the Rexatrom Chamber of Commerce</p>
+
+            <form action="thankyou.html" id="membershipForm" method="get">
+                <label for="">First Name:
+                    <input type="text" name="firstName" title="Enter Your Name" autocomplete="given-name" required>
+                </label>
+
+                <label for="">Last Name:
+                    <input type="text" name="lastName" title="Enter Your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>Organizational Title:
+                    <input type="text" name="orgTitle" title="Your position in the organization" autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}" required>
+                </label>
+
+                <label for="">Email:
+                    <input type="email" name="email" title="Enter a valid Email address" autocomplete="email" placeholder="abc@email.com" required>
+                </label>
+
+                <label for="">Mobile Phone:
+                    <input type="tel" name="Phone" title="enter a valid phone number" autocomplete="tel" required>
+                </label>
+
+                <label for="">Business/Organization Name:
+                    <input type="text" name="businessName" title="your business/organization" autocomplete="organization" required>
+                </label>
+
+                <label for="">Membership Level:
+                    <select name="membershipLevel" required>
+                        <option value="np">NP Membership (Non-Profit, Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Business Description:
+                    <textarea name="businessDesc" title="Describe your business" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button type="submit">Submit Application Form</button>
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <button class="modal-btn" data-modal="npModal">More Info</button>
+                </div>
+
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <button class="modal-btn" data-modal="bronzeModal">More Info</button>
+                </div>
+
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <button class="modal-btn" data-modal="silverModal">More Info</button>
+                </div>
+
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <button class="modal-btn" data-modal="goldModal">More Info</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="npModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <p>No fee, community engagement, networking opportunities.</p>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>Basic advertising, training sessions, member directory listing.</p>
+            </div>
+        </div>
+
+        <div class="modal" id="silverModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>Premium directory listing, event discounts, featured spotlight.</p>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>All silver benefits + exclusive sponsorship opportunities.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact us at info@rexatromchamber.com | Phone: (234) 808-014-5320</p>
+        <p>&copy; <span id="year"></span> Rexatrom Chamber of Commerce | WDD 231</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/join.js"></script>
