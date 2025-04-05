@@ -509,3 +509,83 @@ textarea {
     cursor: pointer;
     color: red;
 }
+
+/* ================================== */
+/* discover.css */
+
+/* Base Grid Layout */
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+      "sidebar"
+      "gallery";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #f7f7f7;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery {
+    grid-area: gallery;
+    display: grid;
+    gap: 1.5rem;
+}
+  
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.card h2 {
+    margin-top: 0;
+    color: #333;
+}
+  
+.card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+  
+.card address {
+    font-style: normal;
+    color: #666;
+    margin: 0.5rem 0;
+}
+  
+.card p {
+    color: #444;
+    margin: 0.5rem 0 1rem;
+}
+  
+.card button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.card button:hover {
+    background-color: #005fa3;
+}
+  

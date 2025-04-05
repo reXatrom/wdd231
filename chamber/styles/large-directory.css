@@ -25,3 +25,38 @@
         width: 90%;
     }
 }
+
+/* Hover Effects (not on small screens) */
+@media (min-width: 641px) {
+    .card img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+}
+  
+/* Medium Screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+      grid-template-areas: 
+        "sidebar sidebar"
+        "gallery gallery";
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+  
+/* Large Screens */
+@media (min-width: 1025px) {
+    .discover-grid {
+      grid-template-areas: "sidebar gallery";
+      grid-template-columns: 300px 1fr;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
