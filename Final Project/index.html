@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Critic's Corner - Browse, rate, and review your favorite books and movies." />
+  <meta property="og:title" content="Critic's Corner">
+  <meta property="og:description" content="User reviews, ratings, and recommendations for books and movies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/critics-corner/" />
+  
+  <title>Critic's Corner | Home</title>
+  
+  <link rel="icon" href="images/favicon.ico" >
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+  <header>
+    <h1>Critic's Corner</h1>
+    
+    <nav>
+      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-links" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="form.html">Submit Review</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Discover and Rate Your Favorites</h2>
+      <p>Explore trending books and movies, leave reviews, and read what others are saying.</p>
+      <input type="text" id="searchBar" placeholder="Search reviews..." aria-label="Search reviews" />
+    </section>
+
+    <section id="featured-reviews">
+      <h2>Featured Reviews</h2>
+      <div id="review-cards" class="grid"></div>
+    </section>
+
+    <section id="about">
+      <h2>Why Critic's Corner?</h2>
+      <p>We believe in giving everyone a voice when it comes to storytelling. Whether it's through literature or film, every perspective matters. Join us in creating a community of thoughtful readers and viewers.</p>
+    </section>
+
+    <section id="call-to-action">
+      <h2>Join the Conversation</h2>
+      <p>Have thoughts on your latest read or film night? Share them with our community!</p>
+      <a href="form.html" class="cta-button">Submit Your Review</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Critic's Corner</p>
+    <p><a href="attributions.html">Attributions</a></p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
