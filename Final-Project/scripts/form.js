@@ -1,4 +1,6 @@
 // scripts/form.js
+
+// Update footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
 document.getElementById("reviewForm").addEventListener("submit", function (e) {
@@ -13,28 +15,14 @@ document.getElementById("reviewForm").addEventListener("submit", function (e) {
     snippet: document.getElementById("snippet").value,
   };
 
-  // Save to localStorage
+  // Save to review history
   const saved = JSON.parse(localStorage.getItem("userReviews")) || [];
   saved.push(review);
   localStorage.setItem("userReviews", JSON.stringify(saved));
 
-  alert("Review submitted! It will appear next time you visit.");
+  // Save latest review for thankyou page
+  localStorage.setItem("latestReview", JSON.stringify(review));
 
-  this.reset();
+  // Redirect to thankyou.html
+  window.location.href = "thankyou.html";
 });
-
-// Save form data before redirecting
-const reviewData = {
-  title: document.getElementById('title').value,
-  type: document.getElementById('type').value,
-  genre: document.getElementById('genre').value,
-  year: document.getElementById('year').value,
-  rating: document.getElementById('rating').value,
-  review: document.getElementById('review').value
-};
-
-localStorage.setItem('latestReview', JSON.stringify(reviewData));
-
-// Redirect to thank you page
-window.location.href = "thankyou.html";
-
