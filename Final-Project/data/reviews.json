@@ -1,0 +1,267 @@
+[
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "rating": 4.5,
+      "genre": "Classic",
+      "year": 1925,
+      "snippet": "A timeless tale of love, wealth, and tragedy."
+    },
+    {
+      "title": "Inception",
+      "author": "Christopher Nolan",
+      "rating": 4.8,
+      "genre": "Sci-Fi",
+      "year": 2010,
+      "snippet": "A mind-bending journey through layers of dreams."
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "rating": 4.2,
+      "genre": "Romance",
+      "year": 1813,
+      "snippet": "Witty dialogue and timeless commentary on society."
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "rating": 4,
+        "genre": "Fiction",
+        "year": 1925,
+        "snippet": "A timeless tale of love, wealth, and the American Dream."
+    },
+    {
+        "title": "Inception",
+        "author": "Christopher Nolan",
+        "rating": 5,
+        "genre": "Sci-Fi",
+        "year": 2010,
+        "snippet": "A brilliant dive into the subconscious with layered storytelling."
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "rating": 5,
+        "genre": "Fiction",
+        "year": 1960,
+        "snippet": "A deeply moving story about justice and childhood in the South."
+    },
+    {
+        "title": "The Dark Knight",
+        "author": "Christopher Nolan",
+        "rating": 5,
+        "genre": "Action",
+        "year": 2008,
+        "snippet": "A gripping and intense superhero film with a legendary villain."
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "rating": 4,
+        "genre": "Dystopian",
+        "year": 1949,
+        "snippet": "A chilling vision of the future under total surveillance."
+    },
+    {
+        "title": "Interstellar",
+        "author": "Christopher Nolan",
+        "rating": 5,
+        "genre": "Sci-Fi",
+        "year": 2014,
+        "snippet": "Explores love, time, and space in a visually stunning film."
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "rating": 3,
+        "genre": "Fiction",
+        "year": 1951,
+        "snippet": "A raw and candid exploration of teenage alienation."
+    },
+    {
+        "title": "Avengers: Endgame",
+        "author": "Anthony & Joe Russo",
+        "rating": 5,
+        "genre": "Action",
+        "year": 2019,
+        "snippet": "An epic and emotional finale to the Marvel saga."
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "rating": 4,
+        "genre": "Romance",
+        "year": 1813,
+        "snippet": "A witty exploration of love and social status."
+    },
+    {
+        "title": "The Matrix",
+        "author": "The Wachowskis",
+        "rating": 5,
+        "genre": "Sci-Fi",
+        "year": 1999,
+        "snippet": "A mind-bending thriller that questions the nature of reality."
+    },
+    {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "rating": 5,
+        "genre": "Fantasy",
+        "year": 1997,
+        "snippet": "A magical beginning to a beloved wizarding world."
+    },
+    {
+        "title": "The Lion King",
+        "author": "Roger Allers & Rob Minkoff",
+        "rating": 5,
+        "genre": "Animation",
+        "year": 1994,
+        "snippet": "A heartfelt story of courage, family, and destiny."
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "rating": 4,
+        "genre": "Fantasy",
+        "year": 1937,
+        "snippet": "A charming prelude to an epic fantasy adventure."
+    },
+    {
+        "title": "The Shawshank Redemption",
+        "author": "Frank Darabont",
+        "rating": 5,
+        "genre": "Drama",
+        "year": 1994,
+        "snippet": "A powerful story of hope and friendship inside prison walls."
+    },
+    {
+        "title": "The Prestige",
+        "author": "Christopher Nolan",
+        "rating": 5,
+        "genre": "Drama",
+        "year": 2006,
+        "snippet": "A mesmerizing tale of obsession and illusion."
+    },
+    {
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "rating": 4,
+        "genre": "Dystopian",
+        "year": 1932,
+        "snippet": "A disturbing future shaped by technology and control."
+    },
+    {
+        "title": "Jurassic Park",
+        "author": "Steven Spielberg",
+        "rating": 4,
+        "genre": "Action",
+        "year": 1993,
+        "snippet": "Dinosaurs run wild in this thrilling sci-fi classic."
+    },
+    {
+        "title": "The Fault in Our Stars",
+        "author": "John Green",
+        "rating": 4,
+        "genre": "Romance",
+        "year": 2012,
+        "snippet": "A heartbreaking yet beautiful love story."
+    },
+    {
+        "title": "The Godfather",
+        "author": "Francis Ford Coppola",
+        "rating": 5,
+        "genre": "Crime",
+        "year": 1972,
+        "snippet": "A gripping saga of family, loyalty, and power."
+    },
+    {
+        "title": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "rating": 4,
+        "genre": "Dystopian",
+        "year": 2008,
+        "snippet": "A fierce survival tale with sharp political themes."
+    },
+    {
+        "title": "Fight Club",
+        "author": "David Fincher",
+        "rating": 5,
+        "genre": "Drama",
+        "year": 1999,
+        "snippet": "A brutal and satirical look at identity and rebellion."
+    },
+    {
+        "title": "Moby Dick",
+        "author": "Herman Melville",
+        "rating": 4,
+        "genre": "Adventure",
+        "year": 1851,
+        "snippet": "An epic chase filled with symbolism and madness."
+    },
+    {
+        "title": "Gladiator",
+        "author": "Ridley Scott",
+        "rating": 4,
+        "genre": "Action",
+        "year": 2000,
+        "snippet": "A heroic revenge tale with fierce battles and honor."
+    },
+    {
+        "title": "The Road",
+        "author": "Cormac McCarthy",
+        "rating": 4,
+        "genre": "Post-apocalyptic",
+        "year": 2006,
+        "snippet": "A dark, emotional journey through a dying world."
+    },
+    {
+        "title": "The Social Network",
+        "author": "David Fincher",
+        "rating": 4,
+        "genre": "Drama",
+        "year": 2010,
+        "snippet": "The dramatic rise of Facebook and its creator."
+    },
+    {
+        "title": "The Girl on the Train",
+        "author": "Paula Hawkins",
+        "rating": 3,
+        "genre": "Mystery",
+        "year": 2015,
+        "snippet": "A tense and twisty psychological thriller."
+    },
+    {
+        "title": "The Terminator",
+        "author": "James Cameron",
+        "rating": 4,
+        "genre": "Sci-Fi",
+        "year": 1984,
+        "snippet": "A relentless cyborg hunts through a thrilling time loop."
+    },
+    {
+        "title": "Les Misérables",
+        "author": "Victor Hugo",
+        "rating": 5,
+        "genre": "Historical Fiction",
+        "year": 1862,
+        "snippet": "A sweeping epic of justice, redemption, and revolution."
+    },
+    {
+        "title": "E.T. the Extra-Terrestrial",
+        "author": "Steven Spielberg",
+        "rating": 5,
+        "genre": "Family",
+        "year": 1982,
+        "snippet": "An alien friendship story that warms the heart."
+    },
+    {
+        "title": "The Shining",
+        "author": "Stephen King",
+        "rating": 5,
+        "genre": "Horror",
+        "year": 1977,
+        "snippet": "A chilling descent into madness in an isolated hotel."
+    }
+  ]
+  

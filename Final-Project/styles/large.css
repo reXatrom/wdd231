@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     nav ul {
       flex-direction: column;
     }
@@ -30,4 +30,47 @@
     nav ul {
       display: flex !important;
     }
+} */
+
+/* styles/large.css */
+@media screen and (min-width: 768px) {
+  #nav-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
 }
+
+  /* Responsive Touch */
+  @media (max-width: 600px) {
+    form {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #menu-toggle {
+      display: none; /* Hide toggle button on large screens */
+    }
+  
+    #nav-links {
+      display: flex !important;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    #nav-links.hidden {
+      display: flex; /* Keep showing nav links on large screens */
+    }
+  }
+

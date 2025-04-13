@@ -1,35 +1,52 @@
-// reviews.js
+// scripts/reviews.js
+document.getElementById("year").textContent = new Date().getFullYear();
 
-// Sample reviews.json structure:
-// [
-//   { "id": 1, "title": "Inception", "genre": "Sci-Fi", "rating": 4.5, "review": "Mind-bending!", "year": 2010 },
-//   ...
-// ]
+fetch("data/reviews.json")
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById("all-reviews");
+    const yearFilter = document.getElementById("year-filter");
 
-export async function fetchReviews() {
-    try {
-      const response = await fetch('data/reviews.json');
-      if (!response.ok) throw new Error('Failed to load reviews');
-      return await response.json();
-    } catch (err) {
-      console.error(err);
-      return [];
-    }
-  }
-  
-  export function renderCards(reviews, container) {
-    container.innerHTML = '';
-    reviews.forEach(review => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-      card.innerHTML = `
-        <h3>${review.title}</h3>
-        <p><strong>Genre:</strong> ${review.genre}</p>
-        <p><strong>Year:</strong> ${review.year}</p>
-        <p><strong>Rating:</strong> ${review.rating} ⭐</p>
-        <p>${review.review}</p>
-      `;
-      container.appendChild(card);
+    // Populate years
+    const years = [...new Set(data.map(r => r.year))].sort((a, b) => b - a);
+    years.forEach(year => {
+      const option = document.createElement("option");
+      option.value = option.textContent = year;
+      yearFilter.appendChild(option);
     });
-  }
-  
+
+    function display(filtered) {
+      container.innerHTML = "";
+      filtered.forEach(review => {
+        const div = document.createElement("div");
+        div.className = "review-card";
+        div.innerHTML = `
+          <h3>${review.title}</h3>
+          <p>By ${review.author}</p>
+          <p>⭐ ${review.rating} | ${review.genre} | ${review.year}</p>
+          <p>"${review.snippet}"</p>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    // Initial display
+    display(data);
+
+    // Filtering
+    document.querySelectorAll("select").forEach(select => {
+      select.addEventListener("change", () => {
+        const genre = document.getElementById("genre-filter").value;
+        const year = document.getElementById("year-filter").value;
+        const rating = document.getElementById("rating-filter").value;
+
+        const filtered = data.filter(r =>
+          (!genre || r.genre === genre) &&
+          (!year || r.year == year) &&
+          (!rating || r.rating >= parseFloat(rating))
+        );
+
+        display(filtered);
+      });
+    });
+  });

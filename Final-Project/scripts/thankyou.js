@@ -1,23 +1,18 @@
-// thankyou.js
+const reviewContainer = document.getElementById('latest-review');
+const storedReview = localStorage.getItem('latestReview');
 
-// Grab the container where the latest review will be shown
-const display = document.getElementById('latest-review');
-
-if (display) {
-  const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
-  const latest = reviews[reviews.length - 1];
-
-  if (latest) {
-    display.innerHTML = `
-      <h2>Thank You for Your Review!</h2>
-      <div class="card">
-        <h3>${latest.title}</h3>
-        <p><strong>Genre:</strong> ${latest.genre}</p>
-        <p><strong>Rating:</strong> ${latest.rating} ⭐</p>
-        <p><strong>Your Thoughts:</strong> ${latest.review}</p>
-      </div>
+  if (storedReview) {
+    const review = JSON.parse(storedReview);
+    reviewContainer.innerHTML = `
+      <h3>What you submitted:</h3>
+      <p><strong>Title:</strong> ${review.title}</p>
+      <p><strong>Type:</strong> ${review.type}</p>
+      <p><strong>Genre:</strong> ${review.genre}</p>
+      <p><strong>Year:</strong> ${review.year}</p>
+      <p><strong>Rating:</strong> ${review.rating}/5</p>
+      <p><strong>Review:</strong><br>${review.review}</p>
     `;
-  } else {
-    display.innerHTML = '<p>No recent review found.</p>';
-  }
+
+    // Optional: clear it afterwards
+    localStorage.removeItem('latestReview');
 }
